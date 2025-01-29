@@ -840,7 +840,7 @@
             <button on:click={() => bleConnectionToggle()} class="h-8"
                 ><img
                     class="h-6 w-6"
-                    src={$bleIsConnected ? "/bt2.png" : "/bt1.png"}
+                    src={$bleIsConnected ? "bt2.png" : "bt1.png"}
                     alt="connectBT"
                 /></button
             >
@@ -848,7 +848,7 @@
                 <button on:click={() => setupClick(1, 1)} class="h-8">
                     <img
                         class="h-6 w-6"
-                        src="/setup2.png"
+                        src="setup2.png"
                         alt="Setup"
                     /></button
                 >
@@ -856,7 +856,7 @@
             <button on:click={() => mqttConnectionToggle()} class="h-8"
                 ><img
                     class="h-6 w-6"
-                    src={$mqttIsConnected ? "/wifi.png" : "/no-wifi.png"}
+                    src={$mqttIsConnected ? "wifi.png" : "no-wifi.png"}
                     alt="conectNetwork"
                 /></button
             >
@@ -864,7 +864,7 @@
     {:else}
         <div>
             <button on:click={() => setupClick(1, 1)} class="justify-center">
-                <img class="h-8 w-8" src="/setup2.png" alt="Setup" /></button
+                <img class="h-8 w-8" src="setup2.png" alt="Setup" /></button
             >
         </div>
     {/if}
